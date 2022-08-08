@@ -21,8 +21,34 @@ const Hero = ({
   ],
 }) => {
   return (
-    <div className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto" id="about">
-      <div className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16 ">
+    <div>
+              <div className="justify-center h-full max-w-lg max-h-lg w-full absolute">
+            <Image
+              className=""
+              src="/assets/temp-3.png"
+              alt="VPN Illustrasi"
+              quality={100}
+              width={612}
+              height={383}
+              layout="responsive"
+            />
+          </div>
+          <div className="w-full max-w-lg max-h-lg absolute ">
+            <Image
+              className=""
+              src="/assets/temp-6.png"
+              alt="VPN Illustrasi"
+              quality={100}
+              width={612}
+              height={383}
+              layout="responsive"
+            />
+          </div>
+          <div className="max-w-screen-xl mt-40 px-8 xl:px-16 mx-auto relative" id="about">
+      <div className="flex w-full">
+
+        </div>
+      {/* <div className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16 ">
         <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
           <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
             Want anything to be easy with <strong>LaslesVPN</strong>.
@@ -33,20 +59,9 @@ const Hero = ({
           </p>
           <ButtonPrimary>Get Started</ButtonPrimary>
         </div>
-        <div className="flex w-full">
-          <div className="h-full w-full">
-            <Image
-              src="/assets/Illustration1.png"
-              alt="VPN Illustrasi"
-              quality={100}
-              width={612}
-              height={383}
-              layout="responsive"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="relative w-full flex">
+        
+      </div> */}
+      {/* <div className="relative w-full flex">
         <div className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
           {listUser.map((listUsers, index) => (
             <div
@@ -71,8 +86,10 @@ const Hero = ({
           className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-64 sm:h-48 top-0 mt-8 mx-auto left-0 right-0"
           style={{ filter: "blur(114px)" }}
         ></div>
-      </div>
+      </div> */}
     </div>
+    </div>
+
   );
 };
 

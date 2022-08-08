@@ -4,8 +4,29 @@ import Testimoni from "./Testimoni";
 import ButtonPrimary from "./misc/ButtonPrimary";
 import ButtonOutline from "./misc/ButtonOutline.";
 import Maps from "../public/assets/HugeGlobal.svg";
+import emailjs from "emailjs-com";
 
 const Pricing = () => {
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      emailjs
+        .sendForm(
+          "service_ilooy75",
+          "template_nnpt0ff",
+          e.target,
+          "EYfaXNOd-VexzvTrv"
+        )
+        .then(
+          (result) => {
+            console.log("result : ", result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+        e.target.reset()
+    };
+  
   return (
     <div
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
@@ -180,7 +201,7 @@ const Pricing = () => {
             These are the stories of our customers who have joined us with great
             pleasure when using this crazy feature.
           </p>
-          <div className="w-full flex flex-col py-12">
+          {/* <div className="w-full flex flex-col py-12">
             <Testimoni />
           </div>
           <div className="relative w-full mt-16">
@@ -197,8 +218,82 @@ const Pricing = () => {
               className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
               style={{ filter: "blur(114px)" }}
             ></div>
-          </div>
+          </div> */}
+                 <Testimoni />
+        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
+          Contact Us{" "}
+        </h3>
+        
+        <div className="w-full lg:pl-40 lg:pr-40 sm:pr-0 sm:pl-0 flex justify-evenly w-full items-center mt-4 flex-wrap lg:flex-nowrap">
+          <form onSubmit={handleSubmit} class="rounded-lg shadow-xl flex w-full flex-col px-8 py-8 bg-white dark:bg-blue-500">
+            <label
+              for="name"
+              class="text-gray-500 font-light mt-8 dark:text-gray-50"
+            >
+              Full name<span class="text-red-500 dark:text-gray-50">*</span>
+            </label>
+            <input
+              type="text"
+              name="name"
+              class="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+            />
+
+            <label
+              for="email"
+              class="text-gray-500 font-light mt-4 dark:text-gray-50"
+            >
+              E-mail<span class="text-red-500">*</span>
+            </label>
+            <input
+              type="email"
+              name="email"
+              class="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+            />
+
+            <label
+              for="subject"
+              class="text-gray-500 font-light mt-4 dark:text-gray-50"
+            >
+              Subject<span class="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              name="subject"
+              class="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+            />
+
+            <label
+              for="message"
+              class="text-gray-500 font-light mt-4 dark:text-gray-50"
+            >
+              Message<span class="text-red-500">*</span>
+            </label>
+            <textarea
+              name="message"
+              class="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-green-500 font-light text-gray-500"
+            ></textarea>
+            <div class="flex flex-row items-center justify-start">
+              <button class="px-10 mt-8 py-2 bg-[#130F49] text-gray-50 font-light rounded-md text-lg flex flex-row items-center">
+                Send
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  class="text-cyan-500 ml-2"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.00967 5.12761H11.0097C12.1142 5.12761 13.468 5.89682 14.0335 6.8457L16.5089 11H21.0097C21.562 11 22.0097 11.4477 22.0097 12C22.0097 12.5523 21.562 13 21.0097 13H16.4138L13.9383 17.1543C13.3729 18.1032 12.0191 18.8724 10.9145 18.8724H8.91454L12.4138 13H5.42485L3.99036 15.4529H1.99036L4.00967 12L4.00967 11.967L2.00967 8.54712H4.00967L5.44417 11H12.5089L9.00967 5.12761Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
+        </div>
+ 
       </div>
     </div>
   );

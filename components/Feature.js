@@ -8,10 +8,10 @@ const Feature = () => {
       id="feature"
     >
       <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 py-8 my-12">
-        <div className="flex w-full justify-end">
+        {/* <div className="flex w-full justify-end">
           <div className="h-full w-full p-4">
             <Image
-              src="/assets/Illustration2.png"
+              src="/assets/temp-3.png"
               alt="VPN Illustrasi"
               layout="responsive"
               quality={100}
@@ -19,8 +19,8 @@ const Feature = () => {
               width={508}
             />
           </div>
-        </div>
-        <div className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12">
+        </div> */}
+        <div className="flex flex-col mt-60 items-end justify-center ml-auto w-full lg:w-9/12">
           <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
             The Best NP Technologies
           </h3>
