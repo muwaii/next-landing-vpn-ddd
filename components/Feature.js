@@ -22,7 +22,7 @@ const Feature = () => {
         </div>
         <div className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12">
           <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-            We Provide Many Features You Can Use
+            The Best NP Technologies
           </h3>
           <p className="my-2 text-black-500">
             You can explore the features that we provide with fun and have their
@@ -30,7 +30,7 @@ const Feature = () => {
           </p>
           <ul className="text-black-500 self-start list-inside ml-8">
             <li className="relative circle-check custom-list">
-              Powerfull online protection.
+              Tesdfsdfsdfsdf
             </li>
             <li className="relative circle-check custom-list">
               Internet without borders.
