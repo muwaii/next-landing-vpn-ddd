@@ -20,7 +20,7 @@ const Feature = () => {
             />
           </div>
         </div> */}
-        <div className="flex flex-col mt-60 items-end justify-center ml-auto w-full lg:w-9/12">
+        <div className="flex flex-col items-end justify-center ml-auto w-full lg:w-9/12">
           <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
             The Best NP Technologies
           </h3>

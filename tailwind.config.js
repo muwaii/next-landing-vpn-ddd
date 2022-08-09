@@ -5,7 +5,24 @@ module.exports = {
   //   "./components/*.js",
   //   "./components/**/*.js",
   // ],
+  
   theme: {
+    screens:{
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
     boxShadow: {
       sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
       DEFAULT:
@@ -48,7 +65,40 @@ module.exports = {
       },
     },
     extend: {
+      animation:{
+        wiggle: 'wiggle 1s ease-in-out infinite',
+        beat: 'beat 1s ease-out infinite',
+        beatin: 'beatin 1s ease-in infinite',
+        bounce: 'bounce 1s infinite',
+        spin: 'spin 1s infinite',
+
+      },
+      keyframes:{
+        bounce:{
+          '0%, 100%': {
+            transform: 'translateY(-5%)',
+            // animation-timing-function: 'cubic-bezier(0.8, 0, 1, 1)',
+          },
+          '50%': {
+            transform: 'translateY(0)',
+            // animation-timing-function: 'cubic-bezier(0, 0, 0.2, 1)',
+          }
+        },
+        wiggle:{
+          '0%, 100%':{ transform: 'rotate(-6deg)' },
+          '50%': {transform: 'rotate(6deg)'},
+        },
+        beat:{
+          '0%, 100%':{transform: 'scale(1)'},
+          '50%':{transform: 'scale(1.1)'},
+        },
+        beatin:{
+          '0%, 100%':{ transform: 'scale(1)' },
+          '50%': {transform: 'scale(1.1)'},
+        },
+      }
     },
+   
   },
   variants: {
     extend: {
