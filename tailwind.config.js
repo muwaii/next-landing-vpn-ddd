@@ -70,7 +70,8 @@ module.exports = {
         beat: 'beat 1s ease-out infinite',
         beatin: 'beatin 1s ease-in infinite',
         bounce: 'bounce 1s infinite',
-        spin: 'spin 1s infinite',
+        spin: 'spin 0.5s linear infinite',
+        pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
 
       },
       keyframes:{
@@ -84,6 +85,14 @@ module.exports = {
             // animation-timing-function: 'cubic-bezier(0, 0, 0.2, 1)',
           }
         },
+        spin:{
+          'from': {
+            transform: 'rotate(0deg)',
+          },
+          'to': {
+            transform: 'rotate(360deg)', 
+        },
+      },
         wiggle:{
           '0%, 100%':{ transform: 'rotate(-6deg)' },
           '50%': {transform: 'rotate(6deg)'},
@@ -96,6 +105,14 @@ module.exports = {
           '0%, 100%':{ transform: 'scale(1)' },
           '50%': {transform: 'scale(1.1)'},
         },
+        pulse:{
+          '0%, 100%': {
+            opacity: 1
+          },
+          '50%': {
+            opacity: .6
+          },
+        }
       }
     },
    

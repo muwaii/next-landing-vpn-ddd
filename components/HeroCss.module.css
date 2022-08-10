@@ -1,0 +1,212 @@
+/* .firstdiv{
+    margin-top: 10rem;
+    margin-bottom: 24rem;
+    max-width: 1280px;
+    padding: 0 2rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.seconddiv{
+    padding: 1.5rem 0;
+}
+
+.thirddiv{
+    justify-content: center;
+    display: flex;
+} */
+
+.screen{
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    position: relative;
+}
+
+.mouse, .bulb, .book, .stick{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 30;
+}
+
+.palatte{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.bgh{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    .screen{
+        max-width: 300px;
+        top: 3.6rem;
+     } 
+     .mouse{
+        max-width: 300px;
+        bottom: -11rem;
+        right: 1rem;
+    }
+    
+    .palatte{
+        max-width: 300px;
+        bottom: 0rem;
+        right: 0rem;
+    }
+    
+    .bulb{
+        max-width: 200px;
+        right: 6rem;
+        top: 0.5rem;
+    }
+    
+    .book{
+        max-width: 200px;
+        bottom: -10rem;
+        left: 3rem;
+    }
+    
+    .stick{
+        max-width: 300px;
+        top: 0rem;
+        left: 2rem;
+    }
+    .bgh{
+        max-width: 550px;
+        top: -2rem;
+        left: 0rem;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .screen{
+        max-width: 415px;
+        top: 3.6rem;
+     }
+     .mouse{
+        max-width: 350px;
+        bottom: -16rem;
+        right: 1rem;
+    }
+    
+    .palatte{
+        max-width: 350px;
+        bottom: -1rem;
+        right: 0rem;
+    }
+    
+    .bulb{
+        max-width: 300px;
+        right: 5.5rem;
+        top: 0.5rem;
+    }
+    
+    .book{
+        max-width: 280px;
+        bottom: -14rem;
+        left: 2rem;
+    }
+    
+    .stick{
+        max-width: 300px;
+        top: 3rem;
+        left: 4.5rem;
+    }
+    .bgh{
+        max-width: 700px;
+        top: -2rem;
+        left: 0rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .screen{
+        max-width: 500px;
+        top: 3rem;
+     }
+     .mouse{
+        max-width: 500px;
+        bottom: -16rem;
+        right: 2rem;
+    }
+    
+    .palatte{
+        max-width: 500px;
+        bottom: 2rem;
+        right: 0rem;
+    }
+    
+    .bulb{
+        max-width: 350px;
+        right: 10rem;
+        top: -1.5rem;
+    }
+    
+    .book{
+        max-width: 350px;
+        bottom: -16rem;
+        left: 5rem;
+    }
+    
+    .stick{
+        max-width: 400px;
+        top: 1rem;
+        left: 7rem;
+    }
+    .bgh{
+        max-width: 900px;
+        top: -5rem;
+        left: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .screen{
+       max-width: 500px;
+       top: 3rem;
+    }
+    .mouse{
+        max-width: 500px;
+        bottom: -16rem;
+        right: 10rem;
+    }
+    
+    .palatte{
+        max-width: 500px;
+        bottom: 3rem;
+        right: 7rem;
+    }
+    
+    .bulb{
+        max-width: 500px;
+        right: 14rem;
+        top: -6rem;
+    }
+    
+    .book{
+        max-width: 500px;
+        bottom: -11rem;
+        left: 7rem;
+    }
+    
+    .stick{
+        max-width: 500px;
+        top: -2rem;
+        left: 11rem;
+    }
+    .bgh{
+        max-width: 1100px;
+        top: -8.5rem;
+        left: 3rem;
+    }
+}
+

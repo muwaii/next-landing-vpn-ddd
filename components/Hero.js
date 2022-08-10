@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import ButtonPrimary from "./misc/ButtonPrimary";
+import styles from './HeroCss.module.css';
+
 const Hero = ({
   listUser = [
     {
@@ -25,6 +27,7 @@ const Hero = ({
       className="max-w-screen-xl mt-40 mb-96 px-8 xl:px-16 mx-auto relative"
       id="about"
     >
+      {/* <div className={styles.bg}>hjkhkjh</div> */}
       <div className="grid grid-flow-row py-6 sm:py-16 ">
         {/* <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
           <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
@@ -37,83 +40,77 @@ const Hero = ({
           <ButtonPrimary>Get Started</ButtonPrimary>
         </div> */}
         <div className="justify-center flex w-full">
-          <div className="items-center h-full z-10 xl:max-w-lg xl:max-h-lg lg:max-w-lg lg:max-h-lg md:max-h-sm md:max-w-sm sm:max-w-sm sm:max-h-sm w-full absolute xl:top-12 lg:top-12 md-12">
+          <div className={styles.screen}>
             <Image
-              className="zcreen"
+              className="screen"
               src="/assets/temp-3.png"
-              alt="VPN Illustrasi"
+              alt="Intro-Grafity"
               quality={100}
               width={612}
               height={383}
               layout="responsive"
             />
           </div>
-          <div className="w-full xl:max-w-lg xl:max-h-lg lg:max-w-lg lg:max-h-lg md:max-h-sm md:max-w-sm sm:max-w-sm sm:max-h-sm z-20 xl:-bottom-96 xl:right-36 lg:-bottom-96 lg:right-5 md:-bottom-72 md:right-4 sm:-bottom-72 sm:right-0 
-          absolute animate-beat">
+          <div className={styles.mouse}>
             <Image
-              className="mouze"
+              className="mouse animate-beat"
               src="/assets/temp-6.png"
-              alt="VPN Illustrasi"
+              alt="Intro-Grafity"
               quality={100}
               width={612}
               height={383}
               layout="responsive"
             />
           </div>
-          <div className="w-full xl:max-w-lg xl:max-h-lg lg:max-w-lg lg:max-h-lg md:max-h-sm md:max-w-sm sm:max-w-xs sm:max-h-xs z-5 xl:right-24 xl:-top-20 lg:-top-16 lg:-right-8 md:right-0 md:-top-4 sm:-top-8 sm:right-0 
-          absolute animate-wiggle">
+          <div className={styles.palatte}>
             <Image
-              className="colorplate"
+              className="palatte animate-wiggle"
               src="/assets/temp-7.png"
-              alt="VPN Illustrasi"
+              alt="Intro-Grafity"
               quality={100}
               width={612}
               height={383}
               layout="responsive"
             />
           </div>
-          <div className="w-full xl:max-w-md xl:max-h-md lg:max-h-md lg:max-w-md md:max-h-xs md:max-w-xs sm:max-w-xs sm:max-h-xs z-20 xl:-bottom-72 xl:left-32 lg:-bottom-72 lg:left-0 md:-bottom-56 md:left-4 sm:-bottom-56 sm:-left-4 
-          absolute animate-beatin">
+          <div className={styles.book}>
             <Image
-              className="book"
+              className="book animate-beatin"
               src="/assets/temp-4.png"
-              alt="VPN Illustrasi"
+              alt="Intro-Grafity"
               quality={100}
               width={612}
               height={383}
               layout="responsive"
             />
           </div>
-          <div className="w-full xl:max-w-md xl:max-h-md lg:max-w-md lg:max-h-md md:max-h-xs md:max-w-xs sm:max-w-xs sm:max-h-xs z-20 xl:-top-32 xl:right-56 lg:-top-32 lg:right-24 md:-top-16 md:right-20 sm:-top-16 sm:right-16 
-          absolute  animate-bounce ">
+          <div className={styles.bulb}>
             <Image
-              className="bulb"
+              className="bulb animate-bounce"
               src="/assets/temp-8.png"
-              alt="VPN Illustrasi"
+              alt="Intro-Grafity"
               quality={100}
               width={612}
               height={383}
               layout="responsive"
             />
           </div>
-          <div className="w-full xl:max-w-lg xl:max-h-lg lg:max-w-lg lg:max-h-lg md:max-h-sm md:max-w-sm sm:max-w-sm sm:max-h-sm z-20 xl:-top-24 xl:left-40 lg:-top-24 lg:left-8 md:-top-12 md:left-8 sm:-top-12 sm:-left-8 
-          absolute animate-wiggle">
+          <div className={styles.stick}>
             <Image
-              className="stik"
+              className="stick animate-wiggle"
               src="/assets/temp-5.png"
-              alt="VPN Illustrasi"
+              alt="Intro-Grafity"
               quality={100}
               width={612}
               height={383}
               layout="responsive"
             />
           </div>
-          <div className="w-full xl:max-w-lg xl:max-h-lg lg:max-w-lg lg:max-h-lg md:max-h-sm md:max-w-sm sm:max-w-sm sm:max-h-sm z-20 xl:-top-24 xl:left-40 lg:-top-24 lg:left-8 md:-top-12 md:left-8 sm:-top-12 sm:-left-8 
-          absolute animate-wiggle">
+          <div className={styles.bgh}>
             <Image
-              className="stik"
-              src="/assets/temp-5.png"
-              alt="VPN Illustrasi"
+              className="bgh"
+              src="/assets/bg-h-1.png"
+              alt="Intro-Grafity"
               quality={100}
               width={612}
               height={383}

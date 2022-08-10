@@ -3,12 +3,14 @@ import Feature from "../components/Feature";
 import Pricing from "../components/Pricing";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
+// import { serverSideTranslations } from "/next-i18next/serverSideTranslations";
+
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>VPN Best Landingpage </title>
+        <title>The Best NP Technologies</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
@@ -19,3 +21,11 @@ export default function Home() {
     </>
   );
 }
+
+// export async function getStaticProps({ locale }){
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(locale, ["home"])),
+//     },
+//   };
+// }

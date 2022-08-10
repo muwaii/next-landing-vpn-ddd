@@ -21,7 +21,7 @@ const Header = () => {
     <>
       <header
         className={
-          "fixed top-0 w-full  z-30 bg-white-500 transition-all " +
+          "fixed top-0 w-full  z-40 bg-white-500 transition-all " +
           (scrollActive ? " shadow-md pt-0 bg-white-500 transition-all" : " pt-4")
         }
       >
@@ -85,7 +85,7 @@ const Header = () => {
                   : " text-black-500 hover:text-green-500 ")
               }
             >
-              About Us
+              About
             </LinkScroll>
             <LinkScroll
               activeClass="active"
