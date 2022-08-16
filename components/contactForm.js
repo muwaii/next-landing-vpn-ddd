@@ -26,7 +26,7 @@ const contactForm = () => {
     <div className="">
       <form onSubmit={handleSubmit}>
         <label>Name</label>
-        <input type="text" name="user_name" />
+        <input type="text" name="user_name"  />
         <label>Email</label>
         <input type="email" name="user_email" />
         <label>Message</label>

@@ -6,10 +6,16 @@ import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
 // import LogoVPN from "../../public/assets/Logo.svg";
 import ButtonToggle from "../misc/ButtonToggle";
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
+import { convertLegacyProps } from "antd/lib/button/button";
+
 
 
 
 const Header = () => {
+  const { t } = useTranslation("common");
+
   const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
   useEffect(() => {
@@ -49,7 +55,7 @@ const Header = () => {
                   : " text-black-500 hover:text-green-500 a")
               }
             >
-              Home
+              {t("navbar.home")}
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -67,7 +73,7 @@ const Header = () => {
                   : " text-black-500 hover:text-green-500 ")
               }
             >
-              Services
+              {t("navbar.service")}
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -85,7 +91,7 @@ const Header = () => {
                   : " text-black-500 hover:text-green-500 ")
               }
             >
-              About
+              {t("navbar.about")}
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -103,16 +109,15 @@ const Header = () => {
                   : " text-black-500 hover:text-green-500 ")
               }
             >
-              Contact Us
+              {t("navbar.contact")}
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            <Link href="/">
+            {/* <Link href="/">
               <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-green-500 transition-all">
                   Thai
               </a>
-            </Link>
-            <ButtonOutline>English</ButtonOutline>
+            </Link> */}
           </div>
         </nav>
       </header>

@@ -1,1 +1,46 @@
-{"intro_txt":"Test into text translate with i18next"}
+{
+    "intro_txt":"The Best NP Technologies",
+    
+    "navbar":{
+        "home":"Home",
+        "service":"Service",
+        "about":"About",
+        "contact":"Contact Us"
+    },
+    "head":{
+        "0":"We provide many features",
+        "1":"Website Application",
+        "2":"Website Design",
+        "3":"Mobile Applicaion"
+    },
+    "service":{
+        "intro":"Service"
+    },
+    "about":{
+        "intro":"About Us"
+    },
+    "employee":{
+        "1":"Andres Traumann",
+        "2":"Nuttida Parin",
+        "3":"Jantapa Binheem",
+        "4":"Kia Paranyu",
+        "5":"Wattanachai Muangngoen",
+        "6":"Supphasek Nateprapai"
+    },
+    "position":{
+        "1":"Chief Executive Officer",
+        "2":"Manager Director",
+        "3":"Software Developer"
+    },
+    "contact":{
+        "intro":"Contact Us",
+        "name":"Name",
+        "email":"Email",
+        "subject":"Subject",
+        "message":"Message",
+        "send":"Send"
+    }
+    
+
+
+}

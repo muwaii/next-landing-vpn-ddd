@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./featurecss.module.css";
-// import { useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next";
 
 const Feature = () => {
-  // const { t } = useTranslation("home");
+  const { t } = useTranslation("common");
   return (
     <div
       className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
@@ -37,24 +37,24 @@ const Feature = () => {
         </div>
         <div className="flex block flex-col items-end justify-center ml-auto w-full lg:w-9/12">
           <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-            The Best NP Technologies
+            {t("head.0")}
           </h3>
           <p className="my-2 text-black-500">
-            {/* {t("home:intro_text") }  */}
+            {t("intro_txt")} 
           </p>
           <ul className="text-black-500 self-start list-inside ml-8">
             <li className="relative circle-check custom-list">
-              Tesdfsdfsdfsdf
+              {t("head.1")}
             </li>
             <li className="relative circle-check custom-list">
-              Internet without borders.
+              {t("head.2")}
             </li>
             <li className="relative circle-check custom-list">
-              Supercharged VPN
+              {t("head.3")}
             </li>
-            <li className="relative circle-check custom-list">
+            {/* <li className="relative circle-check custom-list">
               No specific time limits.
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

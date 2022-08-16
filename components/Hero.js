@@ -24,7 +24,7 @@ const Hero = ({
 }) => {
   return (
     <div
-      className="max-w-screen-xl mt-40 mb-96 px-8 xl:px-16 mx-auto relative"
+      className="max-w-screen-xl mt-40 mb-48 px-8 xl:px-16 mx-auto relative"
       id="about"
     >
       {/* <div className={styles.bg}>hjkhkjh</div> */}
@@ -111,6 +111,83 @@ const Hero = ({
               className="bgh"
               src="/assets/bg-h-1.png"
               alt="Intro-Grafity"
+              quality={100}
+              width={612}
+              height={383}
+              layout="responsive"
+            />
+          </div>
+          <div className={styles.beatbox1}>
+            <Image
+              className="beatbox1 animate-wiggle"
+              src="/assets/beatbox-1.png"
+              alt="Intro-Grafity-bb1"
+              quality={100}
+              width={612}
+              height={383}
+              layout="responsive"
+            />
+          </div>
+          <div className={styles.beatbox2}>
+            <Image
+              className="beatbox2 animate-wiggle"
+              src="/assets/beatbox-2.png"
+              alt="Intro-Grafity-bb2"
+              quality={100}
+              width={612}
+              height={383}
+              layout="responsive"
+            />
+          </div>
+          <div className={styles.beatbox3}>
+            <Image
+              className="beatbox3"
+              src="/assets/beatbox-3.png"
+              alt="Intro-Grafity-bb3"
+              quality={100}
+              width={612}
+              height={383}
+              layout="responsive"
+            />
+          </div>
+          <div className={styles.beatbox4}>
+            <Image
+              className="beatbox4 animate-beat"
+              src="/assets/beatbox-4.png"
+              alt="Intro-Grafity-bb4"
+              quality={100}
+              width={612}
+              height={383}
+              layout="responsive"
+            />
+          </div>
+          <div className={styles.beatbox5}>
+            <Image
+              className="beatbox5 animate-wiggle"
+              src="/assets/beatbox-5.png"
+              alt="Intro-Grafity-bb5"
+              quality={100}
+              width={612}
+              height={383}
+              layout="responsive"
+            />
+          </div>
+          <div className={styles.beatbox6}>
+            <Image
+              className="beatbox6 animate-beatin"
+              src="/assets/beatbox-6.png"
+              alt="Intro-Grafity-bb6"
+              quality={100}
+              width={612}
+              height={383}
+              layout="responsive"
+            />
+          </div>
+          <div className={styles.beatbox7}>
+            <Image
+              className="beatbox7 animate-beatin"
+              src="/assets/beatbox-7.png"
+              alt="Intro-Grafity-bb7"
               quality={100}
               width={612}
               height={383}
