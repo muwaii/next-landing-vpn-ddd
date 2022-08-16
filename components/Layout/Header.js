@@ -7,14 +7,19 @@ import ButtonOutline from "../misc/ButtonOutline.";
 // import LogoVPN from "../../public/assets/Logo.svg";
 import ButtonToggle from "../misc/ButtonToggle";
 import { useTranslation } from "next-i18next";
-import { useRouter } from "next/router";
+import router, { useRouter } from "next/router";
 import { convertLegacyProps } from "antd/lib/button/button";
 
 
 
 
 const Header = () => {
-  const { t } = useTranslation("common");
+  const { t, i18n } = useTranslation("common");
+  function changeLang(lang){
+    router.push({
+      pathname:`/${lang}`
+    });
+  }
 
   const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
@@ -113,11 +118,8 @@ const Header = () => {
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            {/* <Link href="/">
-              <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-green-500 transition-all">
-                  Thai
-              </a>
-            </Link> */}
+          <div onClick={() => changeLang('en')}>en</div>
+          <div onClick={() => changeLang('th')}>th</div>
           </div>
         </nav>
       </header>
