@@ -1,32 +1,17 @@
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
-import Image from 'next/image';
+
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
-import ButtonOutline from "../misc/ButtonOutline.";
-<<<<<<< HEAD
-import LogoVPN from "../../public/assets/Logo.svg";
+
 // i18n
 import { useTranslation } from 'next-i18next';
 import { useRouter } from "next/router";
-=======
-// import LogoVPN from "../../public/assets/Logo.svg";
-import ButtonToggle from "../misc/ButtonToggle";
-import { useTranslation } from "next-i18next";
-import router, { useRouter } from "next/router";
-import { convertLegacyProps } from "antd/lib/button/button";
 
 
 
->>>>>>> 59af7dee1418ded098c75955a4f95c9ac7337ffb
 
 const Header = () => {
-  const { t, i18n } = useTranslation("common");
-  function changeLang(lang){
-    router.push({
-      pathname:`/${lang}`
-    });
-  }
+
 
   const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
@@ -82,11 +67,7 @@ const Header = () => {
                   : " text-black-500 hover:text-green-500 a")
               }
             >
-<<<<<<< HEAD
               {t("about")}
-=======
-              {t("navbar.home")}
->>>>>>> 59af7dee1418ded098c75955a4f95c9ac7337ffb
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -203,11 +184,7 @@ const Header = () => {
                   d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
                 />
               </svg>
-<<<<<<< HEAD
               {t("about")}
-=======
-              Home
->>>>>>> 59af7dee1418ded098c75955a4f95c9ac7337ffb
             </LinkScroll>
             <LinkScroll
               activeClass="active"
