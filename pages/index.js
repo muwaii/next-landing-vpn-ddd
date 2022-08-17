@@ -5,14 +5,27 @@ import Hero from "../components/Hero";
 import Layout from "../components/Layout/Layout";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        "common",
+        "footer",
+        "header"
+      ])),
+    },
+  };
+}
 
-export default function Home() {
+export default function Home(props) {
   return (
     <>
       <Head>
+        <title>The BNPT Company</title>
         <title>The Best NP Technologies</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {props.locals}
       <Layout>
         <Hero />
         <Feature />
@@ -22,16 +35,16 @@ export default function Home() {
   );
 }
 
-export async function getStaticProps({ locale }){
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, [
-        "home",
-        "common",
-        "navbar",
-        "footer",
+// export async function getStaticProps({ locale }){
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(locale, [
+//         "home",
+//         "common",
+//         "navbar",
+//         "footer",
       
-      ])),
-    },
-  };
-}
+//       ])),
+//     },
+//   };
+// }
