@@ -1,3 +1,62 @@
 {
+<<<<<<< HEAD
   "animal": "dog"
 }
+=======
+  "intro_txt": "The Best NP Technologies",
+
+  "navbar": {
+    "home": "Home",
+    "service": "Service",
+    "about": "About",
+    "contact": "Contact Us"
+  },
+  "head": {
+    "0": "We provide many features",
+    "1": "Website Application",
+    "2": "Website Design",
+    "3": "Mobile Applicaion"
+  },
+  "service": {
+    "intro": "Service"
+  },
+  "about": {
+    "intro": "About Us",
+    "name": "The Best NP Technologies",
+    "para1": "we provide software development services to clients with the full set of services including software development, consultation, project planning, software testing, maintenance and system administration.",
+    "para2": "Our main focus has so far been on web application development, but we also have competency in mobile applications development for both android and iOS system."
+  },
+  "employee": {
+    "1": "Andres Traumann",
+    "2": "Nuttida Parin",
+    "3": "Jantapa Binheem",
+    "4": "Kia Paranyu",
+    "5": "Wattanachai ",
+    "6": "Supphasek Nateprapai"
+  },
+  "position": {
+    "1": "Chief Executive Officer",
+    "2": "Manager Director",
+    "3": "Software Developer"
+  },
+  "contact": {
+    "intro": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send"
+  },
+  "translation": {
+    "en": "English",
+    "th": "Thai"
+  },
+  "location": {
+    "name1": "Thailand",
+    "city1": "Krung Thep",
+    "name2": "Estonia",
+    "city2": "Tallin",
+    "nameb": "Trendy building 20th floor(BB), Sukhumvit13, Khlong Toei Nuea, Wattana, Bangkok 10110"
+  }
+}
+>>>>>>> 59af7dee1418ded098c75955a4f95c9ac7337ffb

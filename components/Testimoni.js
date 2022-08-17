@@ -6,47 +6,74 @@ import Image from "next/image";
 import Stars from "../public/assets/Icon/stars.svg";
 import ArrowBack from "../public/assets/Icon/eva_arrow-back-fill.svg";
 import ArrowNext from "../public/assets/Icon/eva_arrow-next-fill.svg";
+import { useTranslation } from "next-i18next";
 
-const Testimoni = ({
+const Testimoni = (
+  {
   listTestimoni = [
     {
-      name: "iezh Robert",
+      name: "employee.1",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
+      position: "position.1",
+      city: "location.city2",
+      country: "location.name2",
       rating: "4.5",
       testimoni:
         "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
     },
     {
-      name: "iezh Robert",
+      name: "employee.2",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
+      position: "position.2",
+      city: "location.city1",
+      country: "location.name1",
       rating: "4.5",
       testimoni:
         "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
     },
     {
-      name: "iezh Robert",
+      name: "employee.3",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
+      position: "position.3",
+      city: "location.city1",
+      country: "location.name1",
       rating: "4.5",
       testimoni:
         "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
     },
     {
-      name: "iezh Robert",
+      name: "employee.4",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
+      position: "position.3",
+      city: "location.city1",
+      country: "location.name1",
+      rating: "4.5",
+      testimoni:
+        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+    },
+    {
+      name: "employee.5",
+      image: "/assets/people-3.png",
+      position: "position.3",
+      city: "location.city1",
+      country: "location.name1",
+      rating: "4.5",
+      testimoni:
+        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+    },
+    {
+      name: "employee.6",
+      image: "/assets/people-3.png",
+      position: "position.3",
+      city: "location.city1",
+      country: "location.name1",
       rating: "4.5",
       testimoni:
         "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
     },
   ],
 }) => {
+  const { t } = useTranslation("common");
   const settings = {
     dots: true,
     customPaging: function (i) {
@@ -91,7 +118,7 @@ const Testimoni = ({
       >
         {listTestimoni.map((listTestimonis, index) => (
           <div className="px-3 flex items-stretch" key={index}>
-            <div className="border-2 border-gray-500 hover:border-orange-500 transition-all rounded-lg p-8 flex flex-col">
+            <div className="border-2 border-gray-500 hover:border-green-500 transition-all rounded-lg p-8 flex flex-col">
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex order-2 xl:order-1">
                   <Image
@@ -102,10 +129,10 @@ const Testimoni = ({
                   />
                   <div className="flex flex-col ml-5 text-left">
                     <p className="text-lg text-black-600 capitalize">
-                      {listTestimonis.name}
+                    {t(`${listTestimonis.name}`)}
                     </p>
                     <p className="text-sm text-black-500 capitalize">
-                      {listTestimonis.city},{listTestimonis.country}
+                    {t(`${listTestimonis.city}`)},{t(`${listTestimonis.country}`)}
                     </p>
                   </div>
                 </div>
@@ -116,7 +143,7 @@ const Testimoni = ({
                   </span>
                 </div>
               </div>
-              <p className="mt-5 text-left">“{listTestimonis.testimoni}”.</p>
+              <p className="mt-5 text-left">“{t(`${listTestimonis.position}`)}”</p>
             </div>
           </div>
         ))}
@@ -124,13 +151,13 @@ const Testimoni = ({
       <div className="flex w-full items-center justify-end">
         <div className="flex flex-none justify-between w-auto mt-14">
           <div
-            className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
+            className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-green-500 border hover:bg-green-500 hover:text-white-500 transition-all text-green-500 cursor-pointer"
             onClick={sliderRef?.slickPrev}
           >
             <ArrowBack className="h-6 w-6 " />
           </div>
           <div
-            className="flex items-center justify-center h-14 w-14 rounded-full bg-white border-orange-500 border hover:bg-orange-500 hover:text-white-500 transition-all text-orange-500 cursor-pointer"
+            className="flex items-center justify-center h-14 w-14 rounded-full bg-white border-green-500 border hover:bg-green-500 hover:text-white-500 transition-all text-green-500 cursor-pointer"
             onClick={sliderRef?.slickNext}
           >
             <ArrowNext className="h-6 w-6" />
