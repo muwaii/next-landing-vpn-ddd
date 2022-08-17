@@ -66,3 +66,15 @@ li.check:before {
 @tailwind utilities;
 /* purgecss start ignore */
 /* purgecss end ignore */
+
+.mx-3 {
+  color: rgb(174, 174, 174);
+}
+
+.eng-bold {
+  color: red;
+}
+
+.th-bold {
+  color: red;
+}

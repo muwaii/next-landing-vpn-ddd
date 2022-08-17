@@ -26,11 +26,24 @@ const Header = () => {
   const { t } = useTranslation("common");
   const router = useRouter();
   const { locale } = router;
+  const [eng, setEng] = useState(true);
+
   function changeLang(lang) {
     router.push({
       pathname: `${lang}`  
     });
+
+    const url = window.location.href;
+    const currentLang = url.search('/en');
+    // console.log('thisis', currentLang);
+    // console.log('type', typeof currentLang);
+    if(currentLang > 0) {
+      setEng(true)
+    } else {
+      setEng(false)
+    }
   }
+
   useEffect(() => {
     changeLang(locale);
   }, []);
@@ -129,8 +142,9 @@ const Header = () => {
               <option onChange={() => changeLang('en')} > English </option>
               <option onChange={() => changeLang('th')} > Thai </option>
             </select> */}
-          <div onClick={() => changeLang('en')} className="mx-3" >{t("translation.en")}</div>
-          <div onClick={() => changeLang('th')} className="mx-3" >{t("translation.th")}</div>
+          <div onClick={() => changeLang('en')} className={`mx-3 ${eng ? "eng-bold" : "" }`} >{t("translation.en")}</div>
+          <div>|</div>
+          <div onClick={() => changeLang('th')} className={`mx-3 ${eng ? "" : "th-bold" }`} >{t("translation.th")}</div>
           {/* <div 
           onClick={() => changeLang('en')} 
           onSetActive={() => { setAfterClick("en") }} 
