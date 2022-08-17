@@ -138,28 +138,10 @@ const Header = () => {
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            {/* <select>
-              <option onChange={() => changeLang('en')} > English </option>
-              <option onChange={() => changeLang('th')} > Thai </option>
-            </select> */}
-          <div onClick={() => changeLang('en')} className={`mx-3 ${eng ? "eng-bold" : "" }`} >{t("translation.en")}</div>
+  
+          <div onClick={() => changeLang('en')} className={`mx-3 cursor-pointer ${eng ? "text-green-500" : "text-gray-400" }`} >{t("translation.en")}</div>
           <div>|</div>
-          <div onClick={() => changeLang('th')} className={`mx-3 ${eng ? "" : "th-bold" }`} >{t("translation.th")}</div>
-          {/* <div 
-          onClick={() => changeLang('en')} 
-          onSetActive={() => { setAfterClick("en") }} 
-          className={"mx-3 px-3" + (afterClick === "en" 
-          ? "text-green-500" 
-          : "text-black-500 hover:text-green-500") }>English</div>
-
-
-          <div 
-          onClick={() => changeLang('en')} 
-          onSetActive={() => { setAfterClick("th") }} 
-          className={"mx-3 px-3" + (afterClick === "th" 
-          ? "text-green-500" 
-          : "text-black-500 hover:text-green-500") }>Thai</div> */}
-          
+          <div onClick={() => changeLang('th')} className={`mx-3 cursor-pointer ${eng ? "text-gray-400" : "text-green-500" }`} >{t("translation.th")}</div>
           </div>
         </nav>
       </header>
