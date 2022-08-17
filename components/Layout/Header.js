@@ -23,7 +23,7 @@ const Header = () => {
   }, []);
 
   // i18n
-  const { t } = useTranslation("header");
+  const { t } = useTranslation("common");
   const router = useRouter();
   const { locale } = router;
   function changeLang(lang) {
@@ -67,7 +67,7 @@ const Header = () => {
                   : " text-black-500 hover:text-green-500 a")
               }
             >
-              {t("about")}
+              {t("navbar.home")}
             </LinkScroll>
             <LinkScroll
               activeClass="active"
