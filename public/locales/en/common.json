@@ -1,8 +1,5 @@
 {
-<<<<<<< HEAD
-  "animal": "dog"
-}
-=======
+  "animal": "dog",
   "intro_txt": "The Best NP Technologies",
 
   "navbar": {
@@ -59,4 +56,3 @@
     "nameb": "Trendy building 20th floor(BB), Sukhumvit13, Khlong Toei Nuea, Wattana, Bangkok 10110"
   }
 }
->>>>>>> 59af7dee1418ded098c75955a4f95c9ac7337ffb
