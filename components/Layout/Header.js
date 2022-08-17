@@ -23,6 +23,7 @@ const Header = () => {
 
   const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
+  const [afterClick, setAfterClick] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setScrollActive(window.scrollY > 20);
@@ -40,7 +41,7 @@ const Header = () => {
           <div className="col-start-1 col-end-2 flex items-center">
              {/* <LogoVPN className="h-8 w-auto" />  */}
              <img src="assets/Logo1.png"  className="h-8 w-auto px-2"/>
-             <h2 className={"py-4 text-black-500" + (scrollActive ? " text-green-500" : " pt-4")}>The Best NP Technologies</h2>
+             <h2 className={"py-4 text-black-500" + (scrollActive ? " text-green-500" : " pt-4")}>{t("about.name")}</h2>
           </div>
           
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
@@ -118,8 +119,27 @@ const Header = () => {
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-          <div onClick={() => changeLang('en')}>en</div>
-          <div onClick={() => changeLang('th')}>th</div>
+            {/* <select>
+              <option onChange={() => changeLang('en')} > English </option>
+              <option onChange={() => changeLang('th')} > Thai </option>
+            </select> */}
+          <div onClick={() => changeLang('en')} className="mx-3" >{t("translation.en")}</div>
+          <div onClick={() => changeLang('th')} className="mx-3" >{t("translation.th")}</div>
+          {/* <div 
+          onClick={() => changeLang('en')} 
+          onSetActive={() => { setAfterClick("en") }} 
+          className={"mx-3 px-3" + (afterClick === "en" 
+          ? "text-green-500" 
+          : "text-black-500 hover:text-green-500") }>English</div>
+
+
+          <div 
+          onClick={() => changeLang('en')} 
+          onSetActive={() => { setAfterClick("th") }} 
+          className={"mx-3 px-3" + (afterClick === "th" 
+          ? "text-green-500" 
+          : "text-black-500 hover:text-green-500") }>Thai</div> */}
+          
           </div>
         </nav>
       </header>

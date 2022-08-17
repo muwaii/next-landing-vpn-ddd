@@ -12,37 +12,61 @@ const Testimoni = (
   {
   listTestimoni = [
     {
-      name: "iezh Robert",
+      name: "employee.1",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
+      position: "position.1",
+      city: "location.city2",
+      country: "location.name2",
       rating: "4.5",
       testimoni:
         "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
     },
     {
-      name: "iezh Robert",
+      name: "employee.2",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
+      position: "position.2",
+      city: "location.city1",
+      country: "location.name1",
       rating: "4.5",
       testimoni:
         "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
     },
     {
-      name: "iezh Robert",
+      name: "employee.3",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
+      position: "position.3",
+      city: "location.city1",
+      country: "location.name1",
       rating: "4.5",
       testimoni:
         "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
     },
     {
-      name: "iezh Robert",
+      name: "employee.4",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
+      position: "position.3",
+      city: "location.city1",
+      country: "location.name1",
+      rating: "4.5",
+      testimoni:
+        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+    },
+    {
+      name: "employee.5",
+      image: "/assets/people-3.png",
+      position: "position.3",
+      city: "location.city1",
+      country: "location.name1",
+      rating: "4.5",
+      testimoni:
+        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+    },
+    {
+      name: "employee.6",
+      image: "/assets/people-3.png",
+      position: "position.3",
+      city: "location.city1",
+      country: "location.name1",
       rating: "4.5",
       testimoni:
         "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
@@ -105,10 +129,10 @@ const Testimoni = (
                   />
                   <div className="flex flex-col ml-5 text-left">
                     <p className="text-lg text-black-600 capitalize">
-                      {t("employee.1")}
+                    {t(`${listTestimonis.name}`)}
                     </p>
                     <p className="text-sm text-black-500 capitalize">
-                      {listTestimonis.city},{t("position.1")}
+                    {t(`${listTestimonis.city}`)},{t(`${listTestimonis.country}`)}
                     </p>
                   </div>
                 </div>
@@ -119,7 +143,7 @@ const Testimoni = (
                   </span>
                 </div>
               </div>
-              <p className="mt-5 text-left">“{listTestimonis.testimoni}”.</p>
+              <p className="mt-5 text-left">“{t(`${listTestimonis.position}`)}”</p>
             </div>
           </div>
         ))}

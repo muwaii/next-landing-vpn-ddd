@@ -119,8 +119,10 @@ const Pricing = () => {
             {t("about.intro")}{" "}
           </h3>
           <p className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12">
-            These are the stories of our customers who have joined us with great
-            pleasure when using this crazy feature.
+            {t("about.para1")}
+          </p>
+          <p className="leading-normal mx-auto mb-8 mt-2 w-10/12 sm:w-7/12 lg:w-6/12">
+            {t("about.para2")}
           </p>
         <Testimoni />
         <div className="w-full h-full my-4" id="testimoni">
@@ -130,12 +132,17 @@ const Pricing = () => {
           {t("contact.intro")}{" "}
         </h3>
         <div className="flex flex-col w-full my-4">
-          <div className="w-full my-8">
+          <div className="w-full my-8 flex justify-center">
             <Mapiframe/>
+            {/* <div>
+              <h3>{t("about.name")}</h3>
+              <p>{t("location.nameb")}</p>
+            </div> */}
           </div>
         </div>
         <div className="w-full lg:pl-40 lg:pr-40 sm:pr-0 sm:pl-0 flex justify-evenly w-full items-center mt-4 flex-wrap lg:flex-nowrap">
           <form onSubmit={handleSubmit} class="rounded-lg shadow-xl flex w-full flex-col px-8 py-8 bg-white dark:bg-blue-500">
+            <h3 className="">Email Us</h3>
             <label
               for="name"
               class="text-gray-500 font-light mt-8 dark:text-gray-50"
@@ -151,7 +158,7 @@ const Pricing = () => {
 
             <label
               for="email"
-              class="text-gray-500 font-light mt-4 dark:text-gray-50"
+              class="text-gray-500 font-light mt-6 dark:text-gray-50"
             >
               {t("contact.email")}<span class="text-red-500">*</span>
             </label>
@@ -164,7 +171,7 @@ const Pricing = () => {
 
             <label
               for="subject"
-              class="text-gray-500 font-light mt-4 dark:text-gray-50"
+              class="text-gray-500 font-light mt-6 dark:text-gray-50"
             >
               {t("contact.subject")}<span class="text-red-500">*</span>
             </label>
@@ -177,14 +184,14 @@ const Pricing = () => {
 
             <label
               for="message"
-              class="text-gray-500 font-light mt-4 dark:text-gray-50"
+              class="text-gray-500 font-light mt-6 dark:text-gray-50"
             >
               {t("contact.message")}<span class="text-red-500">*</span>
             </label>
             <textarea
               name="message"
               placeholder={t("contact.message")}
-              class="bg-transparent border-b py-2 pl-4 focus:rounded-lg focus:ring-1 ring-green-500 font-light text-gray-500"
+              class="bg-transparent h-24 border-b py-2 pl-4 focus:rounded-lg focus:ring-1 ring-green-500 font-light text-gray-500"
             ></textarea>
             <div class="flex flex-row items-center justify-start">
               <button class="px-10 mt-8 py-2 bg-[#130F49] text-gray-50 font-light rounded-md text-lg flex flex-row items-center">

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import styles from "./featurecss.module.css";
+import styles from "./FeatureCss.module.css";
 import { useTranslation } from "next-i18next";
 
 const Feature = () => {

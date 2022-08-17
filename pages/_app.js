@@ -1,7 +1,7 @@
 import "../styles/tailwind.css";
 import "../styles/slick.css";
 import "../components/HeroCss.module.css"
-import "../components/featurecss.module.css"
+import "../components/FeatureCss.module.css"
 
 import { appWithTranslation } from "next-i18next";
 

@@ -3,14 +3,18 @@ import LogoVPN from "../../public/assets/Logo.svg";
 import Facebook from "../../public/assets/Icon/facebook.svg";
 import Twitter from "../../public/assets/Icon/twitter.svg";
 import Instagram from "../../public/assets/Icon/instagram.svg";
+import { useTranslation } from "next-i18next";
+
 const Footer = () => {
+  const { t } = useTranslation("common");
+
   return (
     <div className="flex bg-white-300 pt-16 pb-16">
       <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-6 sm:grid-rows-1 grid-flow-row sm:grid-flow-col grid-cols-3 sm:grid-cols-12 gap-4">
         <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
         <div className="flex" >
         <img src="assets/Logo1.png"  className="h-8 w-auto px-2"/>
-        <h2 className="mt-2 pb-4 text-black-500">The Best NP Technologies</h2>
+        <h2 className="mt-2 pb-4 text-black-500">{t("about.name")}</h2>
         </div>
           <p className="mb-4">
             <strong className="font-medium">LaslesVPN</strong> is a private
