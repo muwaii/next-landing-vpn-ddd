@@ -138,7 +138,7 @@ const Header = () => {
                   : " text-black-500 hover:text-green-500 ")
               }
             >
-              {t("navbar.contact")}
+              {t("navbar.contact")} hfdhhdhdhdhdfdhfdhdfdhf
             </LinkScroll>
           </ul>
           <div className={"lanbox col-start-10 col-end-12 font-medium flex justify-end items-center"}>
