@@ -3,6 +3,8 @@ import "../styles/slick.css";
 import { appWithTranslation } from "next-i18next";
 import "../components/HeroCss.module.css"
 import "../components/FeatureCss.module.css"
+import "../components/Layout/HeaderCss.module.css"
+import "../components/PricingCss.module.css"
 
 
 
