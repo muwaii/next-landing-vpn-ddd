@@ -141,7 +141,7 @@ const Hero = ({
           </div>
           <div className={styles.beatbox3}>
             <Image
-              className="beatbox3"
+              className="beatbox3 animate-wiggle"
               src="/assets/beatbox-3.png"
               alt="Intro-Grafity-bb3"
               quality={100}

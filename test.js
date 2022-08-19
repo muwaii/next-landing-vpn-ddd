@@ -227,7 +227,7 @@ const Header = () => {
                   d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              {t("about")}
+              {t("")}
             </LinkScroll>
 
 
@@ -356,18 +356,3 @@ const Header = () => {
 };
 
 export default Header;
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-You have unread notifications

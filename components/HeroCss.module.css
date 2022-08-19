@@ -36,53 +36,239 @@
 
 }
 
-.beatbox5, .beatbox6{
+.beatbox5, .beatbox6, .beatbox1{
     z-index: 10;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 374px){
+    
     .screen{
-        max-width: 300px;
-        top: 3.6rem;
+        max-width: 230px;
+        top: 2rem;
+        right: -1.5rem;
      } 
      .mouse{
-        max-width: 300px;
-        bottom: -11rem;
-        right: 1rem;
+        max-width: 200px;
+        bottom: -8.25rem;
+        right: 0rem;
     }
     
     .palatte{
-        max-width: 300px;
+        max-width: 200px;
         bottom: 0rem;
         right: 0rem;
     }
     
     .bulb{
-        max-width: 200px;
-        right: 6rem;
-        top: 0.5rem;
+        max-width: 150px;
+        right: 4rem;
+        top: 0rem;
     }
     
     .book{
-        max-width: 200px;
-        bottom: -10rem;
+        max-width: 150px;
+        bottom: -7rem;
         left: 3rem;
     }
     
     .stick{
-        max-width: 300px;
+        max-width: 200px;
         top: 0rem;
-        left: 2rem;
+        left: 2.75rem;
     }
     .bgh{
-        max-width: 550px;
-        top: -2rem;
-        left: 0rem;
+        max-width: 400px;
+        top: -1rem;
+        left: 1rem;
     }
+    .beatbox1{
+        /* left: -8rem;
+        bottom: 8rem; */
+        left: -0rem;
+        bottom: 0rem;
+    }
+    .beatbox2{
+        /* left: -10rem;
+        top: -2rem; */
+        left: -0rem;
+        top: -0rem;
+    }
+    .beatbox3{
+        max-width: 300px;
+        top: 0rem;
+        left: 0rem;
+        
+    }
+    .beatbox4{
+        top: -1.5rem;
+        left: -0rem;
+    }
+    .beatbox5{
+        top: -1.5rem;
+    }
+    .beatbox6{
+        top: -1.5rem;
+    }
+    .beatbox7{
+        right: 0rem;
+        bottom: 3rem;
+    }
+    
 }
 
+@media only screen and (min-width: 375px) and (max-width: 424px){
+    
+    .screen{
+        max-width: 230px;
+        top: 2rem;
+        right: -1.5rem;
+     } 
+     .mouse{
+        max-width: 200px;
+        bottom: -8.25rem;
+        right: 0rem;
+    }
+    
+    .palatte{
+        max-width: 200px;
+        bottom: 0rem;
+        right: 0rem;
+    }
+    
+    .bulb{
+        max-width: 150px;
+        right: 4rem;
+        top: 0rem;
+    }
+    
+    .book{
+        max-width: 150px;
+        bottom: -7rem;
+        left: 3rem;
+    }
+    
+    .stick{
+        max-width: 200px;
+        top: 0rem;
+        left: 2.75rem;
+    }
+    .bgh{
+        max-width: 400px;
+        top: -1rem;
+        left: 1rem;
+    }
+    .beatbox1{
+        /* left: -8rem;
+        bottom: 8rem; */
+        left: -0rem;
+        bottom: 0rem;
+    }
+    .beatbox2{
+        /* left: -10rem;
+        top: -2rem; */
+        left: -0rem;
+        top: -0rem;
+    }
+    .beatbox3{
+        max-width: 300px;
+        top: 0rem;
+        left: 0rem;
+        
+    }
+    .beatbox4{
+        top: -1.5rem;
+        left: -0rem;
+    }
+    .beatbox5{
+        top: -1.5rem;
+    }
+    .beatbox6{
+        top: -1.5rem;
+    }
+    .beatbox7{
+        right: 0rem;
+        bottom: 3rem;
+    }
+    
+}
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 425px) and (max-width: 639px){
+    
+    .screen{
+        max-width: 230px;
+        top: 2rem;
+        right: -1.5rem;
+     } 
+     .mouse{
+        max-width: 200px;
+        bottom: -8.25rem;
+        right: 0rem;
+    }
+    
+    .palatte{
+        max-width: 200px;
+        bottom: 0rem;
+        right: 0rem;
+    }
+    
+    .bulb{
+        max-width: 150px;
+        right: 4rem;
+        top: 0rem;
+    }
+    
+    .book{
+        max-width: 150px;
+        bottom: -7rem;
+        left: 3rem;
+    }
+    
+    .stick{
+        max-width: 200px;
+        top: 0rem;
+        left: 2.75rem;
+    }
+    .bgh{
+        max-width: 400px;
+        top: -1rem;
+        left: 1rem;
+    }
+    .beatbox1{
+        /* left: -8rem;
+        bottom: 8rem; */
+        left: -0rem;
+        bottom: 0rem;
+    }
+    .beatbox2{
+        /* left: -10rem;
+        top: -2rem; */
+        left: -0rem;
+        top: -0rem;
+    }
+    .beatbox3{
+        max-width: 300px;
+        top: 0rem;
+        left: 0rem;
+        
+    }
+    .beatbox4{
+        top: -1.5rem;
+        left: -0rem;
+    }
+    .beatbox5{
+        top: -1.5rem;
+    }
+    .beatbox6{
+        top: -1.5rem;
+    }
+    .beatbox7{
+        right: 0rem;
+        bottom: 3rem;
+    }
+    
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
     .screen{
         max-width: 415px;
         top: 3.6rem;
@@ -123,7 +309,48 @@
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .screen{
+        max-width: 415px;
+        top: 3.6rem;
+     }
+     .mouse{
+        max-width: 350px;
+        bottom: -16rem;
+        right: 1rem;
+    }
+    
+    .palatte{
+        max-width: 350px;
+        bottom: -1rem;
+        right: 0rem;
+    }
+    
+    .bulb{
+        max-width: 300px;
+        right: 5.5rem;
+        top: 0.5rem;
+    }
+    
+    .book{
+        max-width: 280px;
+        bottom: -14rem;
+        left: 2rem;
+    }
+    
+    .stick{
+        max-width: 300px;
+        top: 3rem;
+        left: 4.5rem;
+    }
+    .bgh{
+        max-width: 700px;
+        top: -2rem;
+        left: 0rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
     .screen{
         max-width: 500px;
         top: 3rem;
@@ -164,7 +391,7 @@
     }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px) and (max-width: 1535px) {
     .screen{
        max-width: 500px;
        top: 3rem;
@@ -232,3 +459,70 @@
     }
 }
 
+@media only screen and (min-width: 1536px){
+    .screen{
+       max-width: 500px;
+       top: 3rem;
+    }
+    .mouse{
+        max-width: 500px;
+        bottom: -16rem;
+        right: 10rem;
+    }
+    
+    .palatte{
+        max-width: 500px;
+        bottom: 3rem;
+        right: 7rem;
+    }
+    
+    .bulb{
+        max-width: 500px;
+        right: 14rem;
+        top: -6rem;
+    }
+    
+    .book{
+        max-width: 500px;
+        bottom: -11rem;
+        left: 7rem;
+    }
+    
+    .stick{
+        max-width: 500px;
+        top: -2rem;
+        left: 11rem;
+    }
+    .bgh{
+        max-width: 1100px;
+        top: -8.5rem;
+        left: 3rem;
+    }
+    .beatbox1{
+        left: -8rem;
+        bottom: 8rem;
+    }
+    .beatbox2{
+        left: -10rem;
+        top: -2rem;
+    }
+    .beatbox3{
+        max-width: 900px;
+        top: 1rem;
+        left: 1rem;
+    }
+    .beatbox4{
+        top: -4rem;
+        left: -6rem;
+    }
+    .beatbox5{
+        top: -7rem;
+    }
+    .beatbox6{
+        top: -7rem;
+    }
+    .beatbox7{
+        right: -5rem;
+        bottom: -0rem;
+    }
+}
