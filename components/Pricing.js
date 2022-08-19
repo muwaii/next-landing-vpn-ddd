@@ -36,7 +36,7 @@ const Pricing = () => {
   return (
     <div
       className="bg-gradient-to-b from-white-300 to-white-500 w-full py-14"
-      id="pricing"
+      id="service"
     >
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
@@ -114,7 +114,7 @@ const Pricing = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-full my-16" >
+        <div id="about" className="flex flex-col w-full my-16" >
           <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
             {t("about.intro")}{" "}
           </h3>
@@ -125,7 +125,7 @@ const Pricing = () => {
             {t("about.para2")}
           </p>
         <Testimoni />
-        <div className="w-full h-full my-4" id="testimoni">
+        <div className="w-full h-full my-4" id="contact">
           {/* <Mapiframe/> */}
         </div>
         <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto">

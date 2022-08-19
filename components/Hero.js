@@ -4,28 +4,11 @@ import ButtonPrimary from "./misc/ButtonPrimary";
 import styles from './HeroCss.module.css';
 
 const Hero = ({
-  listUser = [
-    {
-      name: "Users",
-      number: "390",
-      icon: "/assets/Icon/heroicons_sm-user.svg",
-    },
-    {
-      name: "Locations",
-      number: "20",
-      icon: "/assets/Icon/gridicons_location.svg",
-    },
-    {
-      name: "Server",
-      number: "50",
-      icon: "/assets/Icon/bx_bxs-server.svg",
-    },
-  ],
 }) => {
   return (
     <div
       className="max-w-screen-xl mt-40 mb-48 px-8 xl:px-16 mx-auto relative"
-      id="about"
+      id="home"
     >
       {/* <div className={styles.bg}>hjkhkjh</div> */}
       <div className="grid grid-flow-row py-6 sm:py-16 ">

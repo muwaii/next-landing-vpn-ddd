@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./FeatureCss.module.css";
 import { useTranslation } from "next-i18next";
 
-const Feature = () => {
+const Home = () => {
   const { t } = useTranslation("common");
   return (
     <div
@@ -62,4 +62,4 @@ const Feature = () => {
   );
 };
 
-export default Feature;
+export default Home;

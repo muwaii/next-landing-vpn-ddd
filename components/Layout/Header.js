@@ -35,8 +35,6 @@ const Header = () => {
 
     const url = window.location.href;
     const currentLang = url.search('/en');
-    // console.log('thisis', currentLang);
-    // console.log('type', typeof currentLang);
     if(currentLang > 0) {
       setEng(true)
     } else {
@@ -66,7 +64,8 @@ const Header = () => {
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             <LinkScroll
               activeClass="active"
-              to="about"
+              to="home"
+              offset={-150}
               spy={true}
               smooth={true}
               duration={1000}
@@ -84,7 +83,8 @@ const Header = () => {
             </LinkScroll>
             <LinkScroll
               activeClass="active"
-              to="feature"
+              to="service"
+              offset={-105}
               spy={true}
               smooth={true}
               duration={1000}
@@ -102,7 +102,8 @@ const Header = () => {
             </LinkScroll>
             <LinkScroll
               activeClass="active"
-              to="pricing"
+              to="about"
+              offset={-105}
               spy={true}
               smooth={true}
               duration={1000}
@@ -120,7 +121,8 @@ const Header = () => {
             </LinkScroll>
             <LinkScroll
               activeClass="active"
-              to="testimoni"
+              to="contact"
+              offset={-105}
               spy={true}
               smooth={true}
               duration={1000}
