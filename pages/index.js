@@ -1,9 +1,10 @@
 import Head from "next/head";
-import Feature from "../components/Feature";
+import Feature from "../components/Home";
 import Pricing from "../components/Pricing";
-import Hero from "../components/Hero";
+import Home from "../components/Home";
 import Layout from "../components/Layout/Layout";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Hero from "../components/Hero";
 
 export async function getStaticProps({ locale }) {
   return {
@@ -17,7 +18,7 @@ export async function getStaticProps({ locale }) {
   };
 }
 
-export default function Home(props) {
+export default function Homepage(props) {
   return (
     <>
       <Head>
@@ -28,23 +29,9 @@ export default function Home(props) {
       {props.locals}
       <Layout>
         <Hero />
-        <Feature />
-        <Pricing />
+        <Home />  // Head
+        <Pricing />  //  Service, About, Contact
       </Layout>
     </>
   );
 }
-
-// export async function getStaticProps({ locale }){
-//   return {
-//     props: {
-//       ...(await serverSideTranslations(locale, [
-//         "home",
-//         "common",
-//         "navbar",
-//         "footer",
-      
-//       ])),
-//     },
-//   };
-// }
