@@ -29,8 +29,10 @@ export default function Homepage(props) {
       {props.locals}
       <Layout>
         <Hero />
-        <Home />  // Head
-        <Pricing />  //  Service, About, Contact
+        <Home />  
+        {/* Head */}
+        <Pricing />  
+        {/* Service, About, Contact */}
       </Layout>
     </>
   );

@@ -48,13 +48,12 @@ const Pricing = () => {
             {t("service.intro")}
           </p>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
-            <div className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20">
-              <div className="p-4 lg:p-0 mt-6 lg:mt-16">
+            <div className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl pt-4 px-6 pb-16 lg:px-12 xl:px-20">
+              <div className="lg:p-0 mt-6 lg:mt-12">
                 <Image
-                  src="/assets/Free.png"
-                  width={145}
-                  height={165}
-                  alt="Free Plan"
+                  src="/assets/card1-7.png"
+                  width={160}
+                  height={240}
                 />
               </div>
               <p className="text-2xl text-black-600 font-medium capitalize my-2 sm:my-7">
@@ -75,15 +74,17 @@ const Pricing = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20">
-              <div className="p-4 lg:p-0 mt-6 lg:mt-16">
+            <div className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl pt-4 px-6 pb-16 lg:px-12 xl:px-20">
+              <div className="">
+              <div className="p-4 lg:p-0 mt-6 lg:mt-12">
                 <Image
-                  src="/assets/Free.png"
-                  width={145}
-                  height={165}
-                  alt="Free Plan"
+                  src="/assets/card2-2.png"
+                  width={300}
+                  height={240}
                 />
               </div>
+              </div>
+              
               <p className="text-2xl text-black-600 font-medium capitalize my-2 sm:my-7">
                 {t("service.head2")}
               </p>
@@ -126,18 +127,28 @@ const Pricing = () => {
         <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto">
           {t("contact.intro")}{" "}
         </h3>
-        <div className="flex flex-col w-full my-4">
-          <div className="w-full my-8 flex justify-center">
+        
+        <div className="grid grid-flow-col grid-rows-2 gap-4 py-4 my-4">
+        
+          <div className="flex justify-center ">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.637510495141!2d100.55561701465406!3d13.74038269035487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29fa9d0381497%3A0x524dad67eb707a4b!2sThe Trendy Office Building!5e0!3m2!1sen!2sth!4v1660187254918!5m2!1sen!2sth" 
-            className=""
+            className={style.mapif}
             style={{border:0}}
             allowfullscreen="" 
             loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-
           </div>
+          <div className="">
+              <h3 className="text-xl">{t("location.intro")}</h3>
+              <p className="">{t("location.nameb")}</p>
+          </div>
+        
+
         </div>
+
+        
+
         <div className="w-full lg:pl-40 lg:pr-40 sm:pr-0 sm:pl-0 flex justify-evenly w-full items-center mt-4 flex-wrap lg:flex-nowrap">
           <form onSubmit={handleSubmit} class="rounded-lg shadow-xl flex w-full flex-col px-8 py-8 bg-white dark:bg-blue-500">
             <h3 className="">Email Us</h3>

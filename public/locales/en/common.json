@@ -14,7 +14,10 @@
     "3": "Mobile Applicaion"
   },
   "service": {
-    "intro": "Service"
+    "title":"Services",
+    "intro": "Our Service",
+    "head1": "Web Application",
+    "head2": "Mobile Application"
   },
   "about": {
     "intro": "About Us",
@@ -36,6 +39,7 @@
     "3": "Software Developer"
   },
   "contact": {
+
     "intro": "Contact Us",
     "name": "Name",
     "email": "Email",
@@ -48,6 +52,7 @@
     "th": "Thai"
   },
   "location": {
+    "intro":"The Best NP Technologies Co., LTD,",
     "name1": "Thailand",
     "city1": "Krung Thep",
     "name2": "Estonia",

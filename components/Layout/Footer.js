@@ -30,12 +30,12 @@ const Footer = () => {
     //       <div className="w-1/3" >
     //       <p className="text-gray-400">Copyright ©2021, The Best NP Technologies. All Right Reserved</p>
     //       </div>
-          
+
     //     </div>
     //   </div>
     // </div>
-    <div className="bg-gradient-to-b from-white-300 to-gray-400 w-full z-0 grid grid-flow-row grid-cols-1 gap-4 my-8">
-      <div  className="my-12 py-4  ">
+    <div className="bg-gradient-to-b from-white-300 to-white-400 w-full z-0  pt-0.5">
+      {/* <div  className="grid grid-flow-row grid-cols-3 md:grid-flow-col md:grid-rows-3  gap-4 mt-8 py-4  ">
         <div className="flex justify-center mb-2" >
          <img src="assets/Logo1.png"  className="h-8 w-auto px-2"/>
          <h2 className="mt-2 pb-4 text-black-500">{t("about.name")}</h2>
@@ -52,11 +52,38 @@ const Footer = () => {
                <Instagram className="h-6 w-6" />
             </div>
         </div>
-
         <div className="flex justify-center ">
           <p className="text-gray-400 text-sm">Copyright ©2021, The Best NP Technologies. All Right Reserved</p>
         </div>
 
+      </div> */}
+      {/* grid-flow-col grid-rows-3 */}
+      <div className="grid  grid-flow-col grid-rows-2 mt-8 ">
+
+        <div className="grid grid-flow-row grid-cols-2 items-end gap-4">
+          <div className="flex justify-end items-center">
+            <img src="assets/Logo1.png" className="h-8 w-auto px-2" />
+            <h2 className="pt-0.5 text-black-500">{t("about.name")}</h2>
+          </div>
+
+          <div className="flex pl-16">
+            <div className="mx-2 rounded-full items-center justify-center flex p-2 shadow-md">
+              <Facebook className="h-6 w-6" />
+            </div>
+            <div className="mx-2 rounded-full items-center justify-center flex p-2 shadow-md">
+              <Twitter className="h-6 w-6" />
+            </div>
+            <div className="mx-2 rounded-full items-center justify-center flex p-2 shadow-md">
+              <Instagram className="h-6 w-6" />
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-flow-col justify-center items-end">
+            <p className="text-gray-400 text-sm">
+              Copyright ©2021, The Best NP Technologies. All Right Reserved
+            </p>
+        </div>
       </div>
     </div>
   );

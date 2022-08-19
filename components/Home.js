@@ -10,8 +10,9 @@ const Home = () => {
       className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
       id="feature"
     >
-      <div className="grid lg:grid-flow-col 2xs:grid-flow-row 2xs:grid-rows-2 gap-8 py-8 my-12">
-        <div className="flex w-full mb-16">
+      
+      <div className="grid grid-flow-row grid-cols-2  gap-8 py-8 pt-20 my-12">
+        <div className="flex justify-center w-full mb-16">
           <div className={styles.screen}>
             <Image
               className="animate-pulse"
@@ -35,12 +36,14 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className="flex block flex-col items-center justify-center ml-auto w-full lg:w-9/12">
-          <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
-            {t("head.0")}
-          </h3>
-          
-          <ul className="text-black-500 self-center mt-2 list-inside ml-8">
+        <div className="grid grid-flow-col grid-rows-2 w-full">
+          <div className="flex justify-center items-end pb-4">
+            <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black-600">
+              {t("head.0")}
+            </h3>
+          </div>
+          <div className="flex justify-center items-start">
+          <ul className="text-black-500 mt-2 list-inside ml-8">
             <li className="relative circle-check custom-list">
               {t("head.1")}
             </li>
@@ -54,8 +57,14 @@ const Home = () => {
               No specific time limits.
             </li> */}
           </ul>
+          </div>
+          
+          
+          
         </div>
       </div>
+      
+      {/* md:grid-flow-col md:grid-rows-2 */}
     </div>
   );
 };
