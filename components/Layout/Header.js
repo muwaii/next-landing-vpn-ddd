@@ -158,6 +158,7 @@ const Header = () => {
             <LinkScroll
               activeClass="active"
               to="home"
+              offset={-185}
               spy={true}
               smooth={true}
               duration={1000}
@@ -190,6 +191,7 @@ const Header = () => {
             <LinkScroll
               activeClass="active"
               to="service"
+              offset={-105}
               spy={true}
               smooth={true}
               duration={1000}
@@ -222,6 +224,7 @@ const Header = () => {
             <LinkScroll
               activeClass="active"
               to="about"
+              offset={-165}
               spy={true}
               smooth={true}
               duration={1000}
@@ -254,6 +257,7 @@ const Header = () => {
             <LinkScroll
               activeClass="active"
               to="contact"
+              offset={-145}
               spy={true}
               smooth={true}
               duration={1000}
