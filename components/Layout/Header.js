@@ -157,7 +157,7 @@ const Header = () => {
           <ul className="flex w-full justify-between items-center text-black-500">
             <LinkScroll
               activeClass="active"
-              to="about"
+              to="home"
               spy={true}
               smooth={true}
               duration={1000}
@@ -189,7 +189,7 @@ const Header = () => {
             </LinkScroll>
             <LinkScroll
               activeClass="active"
-              to="feature"
+              to="service"
               spy={true}
               smooth={true}
               duration={1000}
@@ -221,7 +221,7 @@ const Header = () => {
             </LinkScroll>
             <LinkScroll
               activeClass="active"
-              to="pricing"
+              to="about"
               spy={true}
               smooth={true}
               duration={1000}
@@ -253,7 +253,7 @@ const Header = () => {
             </LinkScroll>
             <LinkScroll
               activeClass="active"
-              to="testimoni"
+              to="contact"
               spy={true}
               smooth={true}
               duration={1000}
