@@ -13,7 +13,7 @@
     padding: 1rem;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 374px) {
+@media only screen and (min-width: 320px){
     .screen{
         max-width: 350px;
         margin-left: 1rem;
@@ -27,7 +27,7 @@
     
 }
 
-@media only screen and (min-width: 375px) and (max-width: 424px) {
+@media only screen and (min-width: 375px){
     .screen{
         max-width: 350px;
         margin-left: 1rem;
@@ -41,9 +41,7 @@
     
 }
 
-
-
-@media only screen and (min-width: 425px) and (max-width: 639px) {
+@media only screen and (min-width: 425px){
     .screen{
         max-width: 350px;
         margin-left: 1rem;
@@ -57,7 +55,7 @@
     
 }
 
-@media only screen and (min-width: 640px) and (max-width: 767px) {
+@media only screen and (min-width: 640px){
     .screen{
         max-width: 340px;
 
@@ -70,7 +68,7 @@
     
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px){
     .screen{
         max-width: 340px;
 
@@ -83,7 +81,7 @@
     
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+@media only screen and (min-width: 1024px){
     .screen{
         max-width: 420px;
 
@@ -96,7 +94,7 @@
     
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 1535px){
+@media only screen and (min-width: 1280px){
     .screen{
         max-width: 420px;
 

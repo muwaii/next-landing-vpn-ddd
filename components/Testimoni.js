@@ -91,8 +91,9 @@ const Testimoni = ({
 
   return (
     <> 
+    {/* 2xs:grid-flow-col 2xs:grid-rows-3 */}
     <div className="sd">
-    <div className="grid grid-flow-col grid-rows-3 gap-2 mx-auto mt-4 lg:grid-flow-row lg:grid-cols-3">
+    <div className="grid grid-flow-row grid-cols-3 gap-2 mx-auto mt-4 ">
       <div className="card-id grid grid-flow-row grid-rows-2">
         <div className="flex justify-center">
         <img className="w-1/2 aspect-square" src="/assets/temp-3.png" />
