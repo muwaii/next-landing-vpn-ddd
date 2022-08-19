@@ -7,6 +7,8 @@ import { Link as LinkScroll } from "react-scroll";
 import { useTranslation } from 'next-i18next';
 import { useRouter } from "next/router";
 
+//style
+import style from "./HeaderCss.module.css"
 
 
 
@@ -139,11 +141,12 @@ const Header = () => {
               {t("navbar.contact")}
             </LinkScroll>
           </ul>
-          <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
+          <div className={"lanbox col-start-10 col-end-12 font-medium flex justify-end items-center"}>
   
-          <div onClick={() => changeLang('en')} className={`mx-3 cursor-pointer ${eng ? "text-green-500" : "text-gray-400" }`} >{t("translation.en")}</div>
-          <div>|</div>
-          <div onClick={() => changeLang('th')} className={`mx-3 cursor-pointer ${eng ? "text-gray-400" : "text-green-500" }`} >{t("translation.th")}</div>
+             <div onClick={() => changeLang('en')} className={` mx-3 cursor-pointer 2xs:display-none ${eng ? "text-green-500" : "text-gray-400" }`} >{t("translation.en")}</div>
+              <div> | </div>
+              <div onClick={() => changeLang('th')} className={`mx-3 cursor-pointer ${eng ? "text-gray-400" : "text-green-500" }`} >{t("translation.th")}</div>
+          
           </div>
         </nav>
       </header>
@@ -182,7 +185,7 @@ const Header = () => {
                   d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
                 />
               </svg>
-              {t("about")}
+              {t("navbar.home")}
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -214,7 +217,7 @@ const Header = () => {
                   d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
                 />
               </svg>
-              Services
+              {t("navbar.service")}
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -246,7 +249,7 @@ const Header = () => {
                   d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              About Us
+              {t("navbar.about")}
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -278,7 +281,7 @@ const Header = () => {
                   d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
                 />
               </svg>
-              Contact Us
+              {t("navbar.contact")}
             </LinkScroll>
           </ul>
         </div>
