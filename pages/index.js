@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Home from "../components/Home";
+import Home2 from "../components/Home2";
 import Pricing from "../components/Pricing";
-import Home from "../components/Home";
+import Home from "../components/Home2";
 import Layout from "../components/Layout/Layout";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Hero from "../components/Hero";
@@ -29,7 +29,7 @@ export default function Homepage(props) {
       {props.locals}
       <Layout>
         <Hero />
-        <Home />  
+        <Home2 />  
         {/* Head */}
         <Pricing />  
         {/* Service, About, Contact */}
