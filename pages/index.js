@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Feature from "../components/Home";
+import Home from "../components/Home";
 import Pricing from "../components/Pricing";
 import Home from "../components/Home";
 import Layout from "../components/Layout/Layout";
